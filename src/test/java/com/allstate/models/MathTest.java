@@ -30,4 +30,10 @@ public class MathTest {
         int result = Math.factorial(4);
         assertEquals(24,result);
     }
+
+    @Test
+    public void shouldGiveNthTermOfFibonacci() throws Exception {
+        int result = Math.fibonacci(15);
+        assertEquals(610,result);
+    }
 }

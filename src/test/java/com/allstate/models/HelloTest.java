@@ -9,9 +9,7 @@ import java.io.IOException;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by localadmin on 11/01/17.
- */
+
 public class HelloTest {
     @Before
     public void setUp() throws Exception {

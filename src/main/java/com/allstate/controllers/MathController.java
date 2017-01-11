@@ -26,4 +26,12 @@ public class MathController {
         map.put("factorial",result);
         return map;
     }
+    @RequestMapping(value = "/math/fibonacci/{id}")
+    public Map<String,Integer> fibonacci(@PathVariable int id){
+        int result = Math.fibonacci(id);
+        Map<String,Integer> map = new HashMap<>();
+        map.put("fibonacci",result);
+        map.put("n",id);
+        return map;
+    }
 }
